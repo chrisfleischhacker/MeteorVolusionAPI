@@ -1,7 +1,7 @@
 # MeteorVolusionAPI
 Consume Volusion API Using Meteor
 
-# Create Meteor App
+## Create Meteor App
 
 meteor create meteorvolusionapi
 
