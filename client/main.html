@@ -1,0 +1,41 @@
+<head>
+    <title>volusion</title>
+</head>
+
+<body>
+    <h1>Welcome to Meteor!</h1>
+    {{> vapi}}
+</body>
+
+<template name="vapi">
+    <div class="row">
+
+        <div class="col-sm-12 col-md-8 col-md-offset-2">
+            <h3>List Courses</h3>
+
+            <p style="color: #ff0000; margin: 10px 0 10px 0;">
+                {{errMessage}}
+            </p>
+
+            <table class="table table-hover">
+                <thead>
+                    <tr>
+                        <th>ID</th>
+                        <th>Code</th>
+                        <th>Name</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    {{#each courses}}
+                    <tr>
+                        <td>{{ProductID}}</td>
+                        <td>{{ProductCode}}</td>
+                        <td>{{ProductName}}</td>
+                    </tr>
+                    {{/each}}
+                </tbody>
+            </table>
+        </div>
+    </div>
+</template>
+
